@@ -3,18 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 :root{
-    --bg-black-900: #f2f2fc;
-    --bg-black-100: #fdf9ff;
-    --bg-black-50: #e8dfec;
-    --text-black-900: #302e4d;
-    --text-black-700: #504e70;
-}
-body.dark {
     --bg-black-900: #151515;
     --bg-black-100: #222222;
     --bg-black-50: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
+}
+body.dark {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
 }
 body{
     line-height: 1.5;
@@ -109,7 +109,7 @@ ul{
     font-weight: 500;
     padding: 12px 35px;
     color: white;
-    border-radius: 40px;
+    /* border-radius: 40px; */
     display: inline-block;
     white-space: nowrap;
     background: var(--skin-color);
@@ -320,7 +320,7 @@ h3.my-profession{
 .about .about-content .about-text p{
     font-size: 16px;
     line-height: 25px;
-    columns: var(--text-black-700);
+    color: var(--text-black-700);
 }
 .about .about-content .personal-info{
     flex: 0 0 60%;
@@ -508,7 +508,7 @@ h3.my-profession{
     margin-bottom: 60px;
 }
 .contact .contact-info-item{
-    flex-direction: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
 }
@@ -533,7 +533,7 @@ h3.my-profession{
     font-weight: 400;
 }
 .contact .contact-form{
-    flex-direction: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
 }
 .contact .contact-form .col-6 {
